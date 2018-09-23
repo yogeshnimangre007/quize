@@ -1,3 +1,7 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -5,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F9CCF7"
     >
      >
     <TextView
@@ -17,10 +22,12 @@
         android:layout_marginLeft="30dp"
        />
     <TextView
+        android:text="Click radiobutton if answer is one of the radio button but if not, check last option and write correct answer.For now press proceed. "
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/question"
-        android:textSize="30dp"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
         android:textColor="#000"/>
     <RadioGroup
         android:orientation="vertical"
@@ -68,6 +75,26 @@
 
 
     </RadioGroup>
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="None of these"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/check"
+        android:onClick="checkbox"
+        />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text"
+        android:onClick="checktext"
+        />
     <Button
         android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
@@ -75,3 +102,4 @@
         android:text="proceed"
         android:onClick="replace"/>
 </LinearLayout>
+</ScrollView>
