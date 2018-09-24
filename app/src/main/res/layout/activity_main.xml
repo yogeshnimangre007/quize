@@ -18,7 +18,7 @@ android:layout_height="fill_parent">
         android:text="QUIZE WORLD"
         android:textSize="50sp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="@color/black"
         android:layout_marginLeft="30dp"
        />
     <TextView
@@ -26,9 +26,9 @@ android:layout_height="fill_parent">
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/question"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:paddingLeft="10dp"
-        android:textColor="#000"/>
+        android:textColor="@color/black"/>
     <RadioGroup
         android:orientation="vertical"
         android:layout_height="wrap_content"
@@ -70,10 +70,6 @@ android:layout_height="fill_parent">
             android:layout_marginLeft="30dp"
             android:onClick="check_answer"
             />
-
-
-
-
     </RadioGroup>
     <CheckBox
         android:layout_height="wrap_content"
@@ -99,7 +95,7 @@ android:layout_height="fill_parent">
         android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="proceed"
+        android:text="@string/pro"
         android:onClick="replace"/>
 </LinearLayout>
 </ScrollView>
