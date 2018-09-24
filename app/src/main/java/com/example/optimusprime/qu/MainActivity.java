@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,16 +43,13 @@ public class MainActivity extends AppCompatActivity {
             TextView p = (TextView) findViewById(R.id.question);
             p.setText("What is size of double float type in basic turbo c++");
         }
-        if(k == 6){
-            TextView p = (TextView) findViewById(R.id.question);
-            p.setText("congrats your score is " + score + "out of 40 ");
-
+        if(k == 6) {
+            Toast.makeText(MainActivity.this,
+                    "Congratulation your score is"+score , Toast.LENGTH_LONG).show();
         }
         else{
             k=1;
         }
-
-
     }
 
     public void check_answer(View view) {
